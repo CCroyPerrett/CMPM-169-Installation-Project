@@ -1,5 +1,7 @@
 let video; 
-let showcamera = false;
+let showcamera = false; let showpainting = true;
+document.getElementById('showCamera').checked = false;
+document.getElementById('showPainting').checked = true;
 
 function setup() {
   createCanvas(640, 480);
@@ -20,6 +22,17 @@ function draw() {
 }
 
 function showCamera(){
-  showcamera = !showcamera;
+  showcamera = true;
+  showpainting = false;
+  document.getElementById('showCamera').checked = true;
+  document.getElementById('showPainting').checked = false;
 }
+
+function showPainting(){
+  showcamera = false;
+  showpainting = true;
+  document.getElementById('showCamera').checked = false;
+  document.getElementById('showPainting').checked = true;
+}
+
 
