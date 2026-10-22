@@ -19,6 +19,9 @@ function draw() {
     scale(-1.0,1.0);   
     image(video, 0, 0, width, height); 
   }
+  else if(showpainting){
+
+  }
 }
 
 function showCamera(){
@@ -34,5 +37,14 @@ function showPainting(){
   document.getElementById('showCamera').checked = false;
   document.getElementById('showPainting').checked = true;
 }
+
+function enforceMaxInput(){
+  if (parseInt(this.value) > parseInt(this.max)) {
+      this.value = this.max;
+    }
+}
+document.getElementById("redbrush").addEventListener('input', enforceMaxInput);
+document.getElementById("bluebrush").addEventListener('input', enforceMaxInput);
+document.getElementById("greenbrush").addEventListener('input', enforceMaxInput);
 
 

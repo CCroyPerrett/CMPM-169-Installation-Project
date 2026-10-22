@@ -15,9 +15,14 @@
   </main>
 </body>
 <label class="toggle-switch">
-  <input type="checkbox" id="showCamera" onchange="showCamera()">Show Main Camera<br>
-  <input type="checkbox" id="showPainting" onchange="showPainting()">Show Painting<br>
-  <span class="slider"></span>
+  <input type="checkbox" id="showCamera" onclick="showCamera()"><span onclick="showCamera()">Show Main Camera</span><br>
+  <input type="checkbox" id="showPainting" onclick="showPainting()"><span onclick="showPainting()">Show Painting</span><br>
+  Accepted Paintrbush Values:
+  <input type="number" placeholder="Red" id="redbrush" min="0" max="255">
+  <input type="number" placeholder="Green" id="greenbrush" min="0" max="255">
+  <input type="number" placeholder="Blue" id="bluebrush" min="0" max="255"></label>
+
+</select>
 </label> 
 <script src="./js/sketch.js"></script>
 </html>
