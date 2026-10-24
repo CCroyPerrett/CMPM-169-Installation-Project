@@ -17,10 +17,18 @@
 <label class="toggle-switch">
   <input type="checkbox" id="showCamera" onclick="showCamera()"><span onclick="showCamera()">Show Main Camera</span><br>
   <input type="checkbox" id="showPainting" onclick="showPainting()"><span onclick="showPainting()">Show Painting</span><br>
-  Accepted Paintrbush Values:
+   Value:
   <input type="number" placeholder="Red" id="redbrush" min="0" max="255">
   <input type="number" placeholder="Green" id="greenbrush" min="0" max="255">
-  <input type="number" placeholder="Blue" id="bluebrush" min="0" max="255"></label>
+  <input type="number" placeholder="Blue" id="bluebrush" min="0" max="255"></label><br>
+  <label for="colorsel">Choose a Default Paintbrush value:</label>
+<select id="colorsel" name="colorsel" onchange="selectColor()">
+  <option value="red">Red</option>
+  <option value="green">Green</option>
+  <option value="blue" selected>Blue</option>
+  <option value="yellow">Yellow</option>
+  <option value="purple">Purple</option>
+</select>
 
 </select>
 </label> 

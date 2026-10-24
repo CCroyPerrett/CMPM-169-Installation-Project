@@ -8,6 +8,8 @@ let blueinput = document.getElementById("bluebrush");
 let greeninput = document.getElementById("greenbrush");
 let colorwiggleroom = 50;
 
+let colorselect = document.getElementById("colorsel");
+
 function setup() {
   createCanvas(640, 480);
   background(220);
@@ -77,3 +79,33 @@ document.getElementById("bluebrush").addEventListener('input', enforceMaxInput);
 document.getElementById("greenbrush").addEventListener('input', enforceMaxInput);
 
 
+function selectColor(){
+  console.log("selected color!")
+  switch (colorselect.value){
+    case "red":
+      redinput.value = 100;
+      greeninput.value = 30;
+      blueinput.value = 30;
+      break;
+    case "green":
+      redinput.value = 30;
+      greeninput.value = 100;
+      blueinput.value = 30;
+      break;
+    case "blue":
+      redinput.value = 30;
+      greeninput.value = 30;
+      blueinput.value = 100;
+      break;
+    case "yellow":
+      redinput.value = 100;
+      greeninput.value = 100;
+      blueinput.value = 30;
+      break;
+    case "purple":
+      redinput.value = 128;
+      greeninput.value = 40;
+      blueinput.value = 128;
+      break;
+  }
+}
