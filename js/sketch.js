@@ -107,5 +107,10 @@ function selectColor(){
       greeninput.value = 40;
       blueinput.value = 128;
       break;
+    case "default":
+      redinput.value = 80;
+      greeninput.value = 80;
+      blueinput.value = 80;
+      break;
   }
 }

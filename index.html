@@ -17,17 +17,18 @@
 <label class="toggle-switch">
   <input type="checkbox" id="showCamera" onclick="showCamera()"><span onclick="showCamera()">Show Main Camera</span><br>
   <input type="checkbox" id="showPainting" onclick="showPainting()"><span onclick="showPainting()">Show Painting</span><br>
-   Value:
-  <input type="number" placeholder="Red" id="redbrush" min="0" max="255">
-  <input type="number" placeholder="Green" id="greenbrush" min="0" max="255">
-  <input type="number" placeholder="Blue" id="bluebrush" min="0" max="255"></label><br>
-  <label for="colorsel">Choose a Default Paintbrush value:</label>
+   Selected RBG Value:
+  <input type="number" placeholder="Red" id="redbrush" min="0" max="255" value="80">
+  <input type="number" placeholder="Green" id="greenbrush" min="0" max="255" value="80">
+  <input type="number" placeholder="Blue" id="bluebrush" min="0" max="255" value="80"></label><br>
+  <label for="colorsel">Choose a Paintbrush Value:</label>
 <select id="colorsel" name="colorsel" onchange="selectColor()">
   <option value="red">Red</option>
   <option value="green">Green</option>
   <option value="blue" selected>Blue</option>
   <option value="yellow">Yellow</option>
   <option value="purple">Purple</option>
+  <option value="default">Default</option>
 </select>
 
 </select>
